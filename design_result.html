@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starbooks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://kit.fontawesome.com/44ab839538.js" crossorigin="anonymous"></script>
+    <!-- 本のタイトル-->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <!-- 本の内容 -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Starbooks</h1>
+</div>
+<div class="wrapper">
+    <div class="result">
+        <div class=book>
+            <img src="img/neuro.jpg">
+            <h3>testtesttesttesttesttesttesttesttest</h3>
+        </div>
+        <div class=book>
+            <img src="img/neuro.jpg">
+            <h3>ニューロマンサー</h3>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <form action="design_result.html" method="POST" style="margin: 3%;">
+        <input type="text" placeholder="本のタイトル">
+        <input type="submit" value="&#xf002; 検索" class="fas">
+    </form>
+</div>
+</body>
+<script>
+function font_awesome_icons() {
+    wp_enqueue_style( 'fontawesome-icons', '//use.fontawesome.com/{Use_your_own_unique_id_here}.css' );
+}
+add_action( 'wp_enqueue_scripts', 'font_awesome_icons' );
+</script>
+</html>

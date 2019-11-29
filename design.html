@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starbooks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://kit.fontawesome.com/44ab839538.js" crossorigin="anonymous"></script>
+    <!-- 本のタイトル-->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <!-- 本の内容 -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Starbooks</h1>
+</div>
+<div class="wrapper">
+    <div class="post">
+        <p>2019/12/1</p>
+        <img src="img/paladox_men.jpg">
+        <div class="content">
+            <h2>パラドックス・メン</h2>
+            <p>
+                時は2177年、舞台はアメリカ帝国。
+                物語はひとりの男が権力者の寝室に忍びこむところから始まる。
+                その男こそが〈盗賊〉アラール。記憶を失くし、名前を失くし、
+                不時着した正体不明の宇宙船より現れた男。権力を一手に握った、
+                悪しきアメリカ帝国宰相ヘイズ=ゴーントを討つ力を持った、唯一の男。
+                帝国警察に追われる中、ケイリスという女性と逢いしアラールは、彼女に命を救われる。
+                はじめて逢うにも関わらず記憶を揺さぶられ、その理由根拠は一切不明。
+                この時を境にアラールを中心として宇宙は回りだす。
+                謎多き宇宙船トインビー22、全知全能の男メガネット・マインド、
+                ヘイズ=ゴーントとの対峙、フェンシングによる決闘……時間は縮み空間は歪む。
+            </p>
+        </div>
+    </div>
+
+    <div class="post">
+        <p>2019/12/1</p>
+        <img src="img/millennum.jpeg">
+        <div class="content">
+            <h2>ミレニアム１</h2>
+            <p>
+                月刊誌『ミレニアム』の発行責任者ミカエルは、大物実業家の違法行為を暴く記事を発表した。
+                だが名誉毀損で有罪になり、彼は『ミレニアム』から離れた。そんな折り、大企業グループの前会長ヘンリックから依頼を受ける。
+                およそ40年前、彼の一族が住む孤島で兄の孫娘ハリエットが失踪した事件を調査してほしいというのだ。解決すれば、大物実業家を破滅させる証拠を渡すという。
+                ミカエルは受諾し、困難な調査を開始する。
+            </p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <form action="design_result.html" method="POST" style="margin: 3%;">
+        <input type="text" placeholder="本のタイトル">
+        <input type="submit" value="&#xf002; 検索" class="fas">
+    </form>
+</div>
+</body>
+<script>
+function font_awesome_icons() {
+     wp_enqueue_style( 'fontawesome-icons', '//use.fontawesome.com/{Use_your_own_unique_id_here}.css' );
+}
+add_action( 'wp_enqueue_scripts', 'font_awesome_icons' );
+</script>
+</html>
